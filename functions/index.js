@@ -9,6 +9,6 @@ app.use(express())
 
 //routes:
 app.get("/tasks/:uid", getTasks);
-app.post("/tasks" , addTask);
+app.post("/tasks/:uid" , addTask);
 
 export const api = onRequest(app); // exports the cloud function
